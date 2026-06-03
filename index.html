@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>From SL-1 to SMRs · How Nuclear Safety Engineering Solved Each Disaster</title>
+<meta name="description" content="An interactive examination of five nuclear incidents and how modern reactor design eliminated each failure mode.">
+
+<!-- Open Graph -->
+<meta property="og:title" content="From SL-1 to SMRs">
+<meta property="og:description" content="How nuclear engineering solved each disaster that defined public perception">
+<meta property="og:type" content="article">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,300;9..144,400;9..144,500;9..144,700;9..144,900&family=JetBrains+Mono:wght@400;500;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+<div class="grain"></div>
+
+<!-- HEADER -->
+<header class="site-header">
+  <div class="header-inner">
+    <a href="#" class="header-mark">
+      <svg class="mark-symbol" width="20" height="20" viewBox="0 0 20 20">
+        <circle cx="10" cy="10" r="2" fill="#d4391d"/>
+        <ellipse cx="10" cy="10" rx="8" ry="3" fill="none" stroke="#d4391d" stroke-width="0.7"/>
+        <ellipse cx="10" cy="10" rx="8" ry="3" fill="none" stroke="#d4391d" stroke-width="0.7" transform="rotate(60 10 10)"/>
+        <ellipse cx="10" cy="10" rx="8" ry="3" fill="none" stroke="#d4391d" stroke-width="0.7" transform="rotate(120 10 10)"/>
+      </svg>
+      <span class="mark-text">SAFETY · ARCHIVE</span>
+    </a>
+    <nav class="header-nav">
+      <a href="#prologue">Prologue</a>
+      <a href="#timeline">Timeline</a>
+      <a href="#decay">Physics</a>
+      <a href="#reactors">Reactors</a>
+      <a href="#defense">Defense</a>
+      <a href="#comparison">Data</a>
+      <a href="#epilogue">Epilogue</a>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <!-- Animated atomic background -->
+  <div class="hero-atom" aria-hidden="true">
+    <svg viewBox="0 0 800 800" width="100%" height="100%" preserveAspectRatio="xMidYMid slice">
+      <g class="atom-orbit-1">
+        <ellipse cx="400" cy="400" rx="280" ry="80" fill="none" stroke="rgba(212, 57, 29, 0.06)" stroke-width="1"/>
+      </g>
+      <g class="atom-orbit-2" transform="rotate(60 400 400)">
+        <ellipse cx="400" cy="400" rx="280" ry="80" fill="none" stroke="rgba(184, 144, 42, 0.06)" stroke-width="1"/>
+      </g>
+      <g class="atom-orbit-3" transform="rotate(120 400 400)">
+        <ellipse cx="400" cy="400" rx="280" ry="80" fill="none" stroke="rgba(42, 107, 110, 0.06)" stroke-width="1"/>
+      </g>
+
+      <!-- Orbiting electrons -->
+      <circle r="4" fill="#d4391d" class="electron-1"/>
+      <circle r="4" fill="#b8902a" class="electron-2"/>
+      <circle r="4" fill="#2a6b6e" class="electron-3"/>
+
+      <!-- Nucleus -->
+      <circle cx="400" cy="400" r="14" fill="#1a1612" class="nucleus"/>
+      <circle cx="400" cy="400" r="6" fill="#d4391d" class="nucleus-inner"/>
+    </svg>
+  </div>
+
+  <div class="hero-inner">
+    <div class="hero-meta reveal">
+      <span class="meta-line"></span>
+      <span class="meta-label">A DATA-DRIVEN INVESTIGATION · 2026</span>
+      <span class="meta-line"></span>
+    </div>
+    <h1 class="hero-title reveal">
+      <span class="title-from">From</span>
+      <span class="title-sl1">SL-1</span>
+      <span class="title-to">to</span>
+      <span class="title-smrs">SMRs</span>
+    </h1>
+    <p class="hero-subtitle reveal">
+      How nuclear engineering solved each disaster
+      that defined public perception
+    </p>
+    <div class="hero-stats reveal">
+      <div class="stat">
+        <span class="stat-num">5</span>
+        <span class="stat-label">incidents examined</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">65</span>
+        <span class="stat-label">years of evolution</span>
+      </div>
+      <div class="stat">
+        <span class="stat-num">0.03</span>
+        <span class="stat-label">deaths per TWh today</span>
+      </div>
+    </div>
+    <div class="hero-scroll">↓ Scroll to begin</div>
+  </div>
+</section>
+
+<!-- PROLOGUE -->
+<section id="prologue" class="prologue">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">00</span>
+      <span class="marker-label">Prologue</span>
+    </div>
+    <h2 class="section-title reveal">A paradox in plain sight</h2>
+    <div class="prose-grid">
+      <div class="lede reveal">
+        <p>Nuclear power is the safest large-scale energy source ever invented by humans, by every measurable metric. It has saved an estimated <strong>1.8 million lives</strong> by displacing fossil fuels.</p>
+        <p>And yet, public fear of nuclear energy has grown over the same decades that its actual safety has improved by orders of magnitude.</p>
+      </div>
+      <div class="prose-body reveal">
+        <p>This project examines five incidents that shaped public perception — from the first fatal American reactor accident in 1961 to the Fukushima disaster in 2011. Each one taught the industry a different lesson. Each lesson was engineered into the next generation of designs.</p>
+        <p>The story isn't that nuclear is dangerous. The story is that engineers spent six decades making sure each disaster could never happen again.</p>
+        <p class="prose-emphasis">Read on to see what they actually changed.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- TIMELINE -->
+<section id="timeline" class="timeline-section">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">01</span>
+      <span class="marker-label">Timeline of disasters</span>
+    </div>
+    <h2 class="section-title reveal">Five incidents, five lessons</h2>
+    <p class="section-deck reveal">Each incident below revealed a different category of failure mode. Click any year to read the full case study with diagrams.</p>
+
+    <div class="timeline-grid" id="timeline-grid">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- INCIDENT MODAL -->
+<div class="incident-modal" id="incident-modal">
+  <div class="modal-backdrop"></div>
+  <article class="modal-content" id="modal-content">
+    <!-- Populated by JS -->
+  </article>
+</div>
+
+<!-- DECAY HEAT (PHYSICS) -->
+<section id="decay" class="decay-section">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">02</span>
+      <span class="marker-label">The physics that drives safety</span>
+    </div>
+    <h2 class="section-title reveal">Why a "stopped" reactor still needs cooling</h2>
+    <p class="section-deck reveal">When operators press SCRAM, the chain reaction stops within seconds. But the fuel keeps producing heat for days from the radioactive decay of fission products. This decay heat is what made Fukushima dangerous — and what passive safety systems are designed to handle.</p>
+
+    <div class="diagram-container reveal" id="decay-heat-diagram">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="physics-explainer reveal">
+      <div class="physics-grid">
+        <div class="physics-card">
+          <span class="physics-label">The Math</span>
+          <p>Decay heat follows a power law: <span class="math-mono">P(t) ≈ 0.066 × P₀ × t<sup>-0.2</sup></span></p>
+          <p>Even years after shutdown, fuel rods generate heat from long-lived isotopes.</p>
+        </div>
+        <div class="physics-card">
+          <span class="physics-label">Why It Matters</span>
+          <p>A 3,000 MW reactor produces 50 MW of decay heat one hour after shutdown.</p>
+          <p>Without cooling, this is enough to melt fuel in 2-3 hours.</p>
+        </div>
+        <div class="physics-card">
+          <span class="physics-label">The Fix</span>
+          <p>Generation III+ reactors use gravity-fed cooling water that operates with no power needed for at least 72 hours.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REACTOR TYPE COMPARISON -->
+<section id="reactors" class="reactors-section">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">03</span>
+      <span class="marker-label">Design determines danger</span>
+    </div>
+    <h2 class="section-title reveal">Four reactor types, four levels of safety</h2>
+    <p class="section-deck reveal">Not all reactors are created equal. The physical design of a reactor determines whether it's inherently safe or inherently dangerous. Compare the four major designs side by side — and see why modern SMRs cannot melt down regardless of operator actions.</p>
+
+    <div class="diagram-container wide reveal" id="reactor-comparison-diagram">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- DEFENSE IN DEPTH -->
+<section id="defense" class="defense-section">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">04</span>
+      <span class="marker-label">How modern reactors are protected</span>
+    </div>
+    <h2 class="section-title reveal">The five barriers between you and the fuel</h2>
+    <p class="section-deck reveal">Modern reactors use "defense in depth" — multiple independent barriers, each designed to contain radiation if all the others fail. For radiation to reach the public, every single layer must be breached.</p>
+
+    <div class="diagram-container reveal" id="defense-depth-diagram">
+      <!-- Populated by JS -->
+    </div>
+  </div>
+</section>
+
+<!-- COMPARISON -->
+<section id="comparison" class="comparison-section">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">05</span>
+      <span class="marker-label">The data nobody mentions</span>
+    </div>
+    <h2 class="section-title reveal">Deaths per terawatt-hour</h2>
+    <p class="section-deck reveal">Energy comparison from peer-reviewed studies. Lower is safer. The chart shows actual deaths attributable to each energy source per unit of electricity produced.</p>
+
+    <div class="death-chart reveal">
+      <div class="death-row" data-source="coal-brown">
+        <span class="death-label">Coal (brown)</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 100%; --color: #2d2d2d;">
+            <span class="death-value">32.72</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="coal">
+        <span class="death-label">Coal</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 75%; --color: #3d3d3d;">
+            <span class="death-value">24.62</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="oil">
+        <span class="death-label">Oil</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 56%; --color: #5c4a2a;">
+            <span class="death-value">18.43</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="biomass">
+        <span class="death-label">Biomass</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 14%; --color: #6b7d3b;">
+            <span class="death-value">4.63</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="gas">
+        <span class="death-label">Natural gas</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 9%; --color: #6e8aa8;">
+            <span class="death-value">2.82</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="hydro">
+        <span class="death-label">Hydropower</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 4%; --color: #4ba0c4;">
+            <span class="death-value">1.30</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row highlight" data-source="nuclear">
+        <span class="death-label">Nuclear</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 0.4%; --color: #d4a017;">
+            <span class="death-value">0.03</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="wind">
+        <span class="death-label">Wind</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 0.4%; --color: #87b8d8;">
+            <span class="death-value">0.04</span>
+          </div>
+        </div>
+      </div>
+      <div class="death-row" data-source="solar">
+        <span class="death-label">Solar</span>
+        <div class="death-bar-container">
+          <div class="death-bar" style="--target-width: 0.3%; --color: #f0c674;">
+            <span class="death-value">0.02</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="chart-caption reveal">
+      <p>Source: <em>Our World in Data</em>, based on Markandya & Wilkinson (2007) and Sovacool et al. (2016). Includes both accidents and air pollution deaths. Coal data assumes typical European emission standards.</p>
+    </div>
+
+    <div class="comparison-takeaway reveal">
+      <h3>Nuclear is on the safest tier</h3>
+      <p>Despite its dramatic public image, nuclear power has caused <strong>fewer deaths per unit of energy</strong> than every fossil fuel and even rivals wind and solar. The dramatic incidents you've read about above account for most of the historical nuclear deaths — combined.</p>
+    </div>
+  </div>
+</section>
+
+<!-- REACTOR GENERATIONS -->
+<section id="generations" class="generations-section">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">06</span>
+      <span class="marker-label">The evolution of safety</span>
+    </div>
+    <h2 class="section-title reveal">From manual valves to walk-away safe</h2>
+    <p class="section-deck reveal">Reactor designs have evolved through four generations, each one engineering out the failure modes of the previous era. Today's emerging Generation IV designs cannot melt down even with no operator action.</p>
+
+    <div class="diagram-container wide reveal" id="generations-diagram">
+      <!-- Populated by JS -->
+    </div>
+
+    <div class="gen-detail-grid reveal">
+      <div class="gen-detail">
+        <span class="gen-label">Gen I — Active safety</span>
+        <p>Operators had to actively maintain safe conditions. A single mistake or system failure could lead to disaster, as SL-1 demonstrated. Containment was minimal or absent.</p>
+      </div>
+      <div class="gen-detail">
+        <span class="gen-label">Gen II — Engineered safety</span>
+        <p>Multiple redundant systems took over from operators during emergencies. Robust containment buildings became mandatory. The reactors that experienced TMI, Chernobyl, and Fukushima were Gen II designs.</p>
+      </div>
+      <div class="gen-detail">
+        <span class="gen-label">Gen III — Passive safety</span>
+        <p>Safety systems work without electrical power, using gravity and natural circulation. Could survive station blackouts that defined Fukushima. AP1000 reactors are operating today using these principles.</p>
+      </div>
+      <div class="gen-detail">
+        <span class="gen-label">Gen IV — Inherently safe</span>
+        <p>Physics itself prevents meltdown. Cores cannot reach temperatures that damage them, even with no cooling at all. Small modular reactors (SMRs) emerging in the 2020s use these principles.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- EPILOGUE -->
+<section id="epilogue" class="epilogue">
+  <div class="container">
+    <div class="section-marker reveal">
+      <span class="marker-num">07</span>
+      <span class="marker-label">Epilogue</span>
+    </div>
+    <h2 class="section-title reveal">What the next reactor knows</h2>
+    <div class="prose-grid">
+      <div class="lede reveal">
+        <p>Generation IV reactors and small modular reactors (SMRs) emerging in the 2020s incorporate every lesson from the timeline above.</p>
+      </div>
+      <div class="prose-body reveal">
+        <ul class="lessons-list">
+          <li><strong>SL-1's lesson:</strong> No single operator action can cause criticality. <em>Built into every modern reactor.</em></li>
+          <li><strong>Three Mile Island's lesson:</strong> Human-machine interfaces must be intuitive. <em>Modern control rooms redesigned around cognitive load.</em></li>
+          <li><strong>Chernobyl's lesson:</strong> Reactors must be inherently stable, with negative reactivity feedback. <em>Now a regulatory requirement worldwide.</em></li>
+          <li><strong>Davis-Besse's lesson:</strong> Continuous monitoring beats periodic inspection. <em>Real-time sensors and AI predict failures before they happen.</em></li>
+          <li><strong>Fukushima's lesson:</strong> Passive safety means survival without electricity. <em>Gen III+ reactors cool themselves for days using gravity alone.</em></li>
+        </ul>
+        <p class="prose-emphasis">The reactors being built today were designed by engineers who studied every failure on this page. They are the safest machines humans have ever made.</p>
+      </div>
+    </div>
+
+    <div class="signoff reveal">
+      <span class="signoff-line"></span>
+      <span class="signoff-text">END · A nuclear safety archive · 2026</span>
+      <span class="signoff-line"></span>
+    </div>
+  </div>
+</section>
+
+<script src="js/incidents-data.js"></script>
+<script src="js/diagrams.js"></script>
+<script src="js/charts.js"></script>
+<script src="js/main.js"></script>
+
+</body>
+</html>

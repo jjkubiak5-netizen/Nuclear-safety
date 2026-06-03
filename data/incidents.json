@@ -1,0 +1,536 @@
+{
+  "incidents": [
+    {
+      "id": "sl1",
+      "name": "SL-1",
+      "fullName": "Stationary Low-Power Reactor Number One",
+      "date": "1961-01-03",
+      "year": 1961,
+      "location": {
+        "site": "National Reactor Testing Station",
+        "city": "Idaho Falls",
+        "state": "Idaho",
+        "country": "USA",
+        "coordinates": [43.5, -112.9]
+      },
+      "reactor": {
+        "type": "Experimental Boiling Water Reactor (BWR)",
+        "designPowerMW": 3.0,
+        "operatingPowerMW": 0.4,
+        "purpose": "Army research reactor for remote military bases",
+        "moderator": "Light water",
+        "coolant": "Light water",
+        "fuel": "Highly enriched uranium-aluminum"
+      },
+      "ines": 4,
+      "casualties": {
+        "immediate_deaths": 3,
+        "injuries": 0,
+        "long_term_deaths": 0,
+        "evacuations": 0,
+        "names": [
+          "John A. Byrnes (22) - Army Specialist",
+          "Richard L. McKinley (27) - Army Specialist",
+          "Richard C. Legg (26) - Navy Seabee"
+        ]
+      },
+      "release": {
+        "iodine131_curies": 80,
+        "total_fission_products_curies": 1100,
+        "containment": "No external contamination - desert location",
+        "notes": "Most radiation contained inside reactor building"
+      },
+      "summary": "First fatal nuclear reactor accident in US history. During a routine maintenance procedure, a single operator manually withdrew the central control rod too far, causing prompt criticality. The reactor went from shutdown to ~20 gigawatts of power in 4 milliseconds, causing a steam explosion that killed all three operators present.",
+      "what_went_wrong": [
+        {
+          "factor": "Single-rod criticality possible",
+          "explanation": "The reactor's design allowed manual movement of a single control rod to insert enough reactivity (2.4% delta k/k) to cause prompt criticality. No one had ever calculated how far the rod could be safely withdrawn."
+        },
+        {
+          "factor": "Manual rod withdrawal required",
+          "explanation": "Operators had to physically lift the central control rod by hand during maintenance. The rod was supposed to be raised 4 inches to reconnect the drive mechanism, but was raised 20+ inches."
+        },
+        {
+          "factor": "No containment building",
+          "explanation": "The SL-1 had no proper containment structure - just the reactor building itself. Modern reactors require multiple containment barriers."
+        },
+        {
+          "factor": "Inadequate operator training",
+          "explanation": "The operators were military personnel with limited reactor physics training. They didn't understand the consequences of rapid rod withdrawal."
+        },
+        {
+          "factor": "Known design issues unaddressed",
+          "explanation": "The control rod mechanism was scheduled to be replaced in spring 1961 - the accident occurred in January. Pre-existing weld and corrosion issues were also documented but not fixed."
+        }
+      ],
+      "what_we_learned": [
+        {
+          "lesson": "Single-operator criticality must be impossible",
+          "modern_solution": "Modern reactors require multiple control rods to be moved to reach criticality. No single rod or single action can cause a criticality event."
+        },
+        {
+          "lesson": "Containment is not optional",
+          "modern_solution": "All commercial reactors now have multi-layer containment: reactor vessel, primary containment, secondary containment, often with reinforced concrete buildings designed to withstand commercial airliner impacts."
+        },
+        {
+          "lesson": "Maximum reactivity insertion must be calculated",
+          "modern_solution": "Reactor designs must demonstrate that no credible accident can insert more reactivity than the reactor can safely absorb (typically <1$ for delayed-neutron supercritical, never prompt-critical)."
+        },
+        {
+          "lesson": "Operators need rigorous training",
+          "modern_solution": "Modern reactor operators undergo years of training, simulator practice, and licensing exams. Continuous retraining is mandatory."
+        }
+      ],
+      "modern_design_changes": [
+        "Inherently safe reactivity coefficients (negative temperature feedback)",
+        "Multiple independent shutdown systems",
+        "No single operator action can cause criticality",
+        "Robust containment buildings with multiple barriers",
+        "Licensed operators with extensive training",
+        "Real-time monitoring and automatic safety systems"
+      ],
+      "sources": [
+        {
+          "title": "SL-1 Reactor Accident on January 3, 1961: Interim Report",
+          "publisher": "Combustion Engineering / U.S. DOE",
+          "id": "IDO-19300"
+        },
+        {
+          "title": "Final Report of the SL-1 Recovery Operation",
+          "publisher": "General Electric Co. / Atomic Energy Commission"
+        },
+        {
+          "title": "The Truth about the SL-1 Accident",
+          "publisher": "Environmental Defense Institute"
+        }
+      ]
+    },
+    {
+      "id": "tmi",
+      "name": "Three Mile Island",
+      "fullName": "Three Mile Island Unit 2",
+      "date": "1979-03-28",
+      "year": 1979,
+      "location": {
+        "site": "Three Mile Island Nuclear Generating Station",
+        "city": "Middletown",
+        "state": "Pennsylvania",
+        "country": "USA",
+        "coordinates": [40.15, -76.72]
+      },
+      "reactor": {
+        "type": "Pressurized Water Reactor (PWR)",
+        "designPowerMW": 906,
+        "operatingPowerMW": 906,
+        "purpose": "Commercial electricity generation",
+        "moderator": "Light water",
+        "coolant": "Light water",
+        "fuel": "Low-enriched uranium dioxide"
+      },
+      "ines": 5,
+      "casualties": {
+        "immediate_deaths": 0,
+        "injuries": 0,
+        "long_term_deaths": "Studies show no detectable increase in cancer rates",
+        "evacuations": "144,000 voluntarily evacuated within 15 miles"
+      },
+      "release": {
+        "average_dose_to_public_mrem": 1.4,
+        "max_dose_to_public_mrem": 100,
+        "comparison": "Average chest x-ray = 10 mrem; natural background = 300 mrem/year",
+        "containment": "Containment held - most radioactive material stayed inside"
+      },
+      "summary": "A combination of equipment failures and operator errors led to a partial meltdown of the reactor core. A stuck-open relief valve allowed coolant to escape, but operators misread their instruments and shut off emergency cooling. About half the reactor core melted, but containment held and minimal radiation was released. The accident transformed nuclear regulation in the US.",
+      "what_went_wrong": [
+        {
+          "factor": "Stuck-open pilot-operated relief valve (PORV)",
+          "explanation": "A valve that was supposed to close after a brief pressure release stuck open for over 2 hours. Coolant escaped through this valve, but the indicator light only showed if the valve was COMMANDED to close, not whether it actually closed."
+        },
+        {
+          "factor": "Misleading control panel instruments",
+          "explanation": "Operators saw rising water level in the pressurizer and concluded the reactor had too much water. In reality, the reactor was losing coolant. They shut off the high-pressure injection (HPI) emergency cooling system - exactly the wrong response."
+        },
+        {
+          "factor": "Inadequate operator training for accidents",
+          "explanation": "Operators had been trained on procedures but not on recognizing this specific accident scenario. Their training emphasized procedure-following over understanding what was actually happening."
+        },
+        {
+          "factor": "Confusing 'cascade of alarms'",
+          "explanation": "Within seconds of the accident starting, over 100 alarms went off simultaneously. There was no way to tell which alarms were important. Critical alerts were buried in noise."
+        },
+        {
+          "factor": "Same operators on shifts before/during",
+          "explanation": "Maintenance issues and a feedwater problem from earlier shifts were not properly communicated. The accident was the culmination of multiple smaller issues."
+        }
+      ],
+      "what_we_learned": [
+        {
+          "lesson": "Human-machine interface design matters enormously",
+          "modern_solution": "Modern control rooms have completely redesigned displays. Critical information is highlighted, alarms are prioritized by importance, and the most important system status is always visible."
+        },
+        {
+          "lesson": "Defense in depth must include human factors",
+          "modern_solution": "Modern reactors are designed assuming operators may make mistakes. Safety systems are automatic and don't rely on correct human action in the first 30 minutes of any event."
+        },
+        {
+          "lesson": "Industry-wide learning is essential",
+          "modern_solution": "INPO (Institute of Nuclear Power Operations) was founded after TMI. All US nuclear utilities now share operational experience and lessons learned in real time."
+        },
+        {
+          "lesson": "Severe accident analysis required",
+          "modern_solution": "All reactor designs must now analyze 'beyond design basis' accidents and demonstrate they can be managed without core damage. PRA (Probabilistic Risk Assessment) became standard."
+        }
+      ],
+      "modern_design_changes": [
+        "Advanced control room design with prioritized alarms",
+        "Symptom-based emergency operating procedures (SBEOPs)",
+        "Operator licensing and continuous training requirements",
+        "Direct valve position indicators (not command status)",
+        "Automatic safety systems that override operator actions if needed",
+        "Industry-wide operational experience sharing (INPO)",
+        "Severe accident management guidelines (SAMG)"
+      ],
+      "sources": [
+        {
+          "title": "Report of the President's Commission on the Accident at Three Mile Island (Kemeny Report)",
+          "publisher": "U.S. Government",
+          "year": 1979
+        },
+        {
+          "title": "Backgrounder on the Three Mile Island Accident",
+          "publisher": "U.S. Nuclear Regulatory Commission"
+        }
+      ]
+    },
+    {
+      "id": "chernobyl",
+      "name": "Chernobyl",
+      "fullName": "Chernobyl Nuclear Power Plant Reactor 4",
+      "date": "1986-04-26",
+      "year": 1986,
+      "location": {
+        "site": "Chernobyl Nuclear Power Plant",
+        "city": "Pripyat",
+        "state": "Kiev Oblast",
+        "country": "Soviet Union (now Ukraine)",
+        "coordinates": [51.39, 30.10]
+      },
+      "reactor": {
+        "type": "RBMK-1000 (Reaktor Bolshoy Moshchnosti Kanalnyy)",
+        "designPowerMW": 3200,
+        "operatingPowerMW": 3200,
+        "purpose": "Commercial electricity + plutonium production capability",
+        "moderator": "Graphite",
+        "coolant": "Light water",
+        "fuel": "Low-enriched uranium dioxide",
+        "design_flaws": [
+          "Positive void coefficient at low power",
+          "Slow control rod insertion (18-22 seconds)",
+          "Graphite-tipped control rods initially INCREASED reactivity",
+          "No proper containment structure"
+        ]
+      },
+      "ines": 7,
+      "casualties": {
+        "immediate_deaths": 2,
+        "acute_radiation_deaths_1986": 28,
+        "long_term_deaths_estimated": "WHO estimates ~4,000 cancer deaths attributable; some studies suggest 9,000-93,000 across Europe",
+        "thyroid_cancer_cases": "~6,000 in children/adolescents at the time",
+        "evacuations": "~115,000 from 30km exclusion zone, ~220,000 total relocated",
+        "exclusion_zone_km2": 2600
+      },
+      "release": {
+        "iodine131_petabecquerels": 1760,
+        "cesium137_petabecquerels": 85,
+        "total_radioactive_material": "~5,300 PBq",
+        "scale": "400x more radiation released than Hiroshima",
+        "containment": "No proper containment - material spread across Europe"
+      },
+      "summary": "During a poorly-planned safety test, operators violated procedures and disabled safety systems on a flawed reactor design. The combination of bad design and operator errors caused a steam explosion and fire. The lack of containment allowed massive radiation release that contaminated large parts of Europe. Considered the worst nuclear disaster in history.",
+      "what_went_wrong": [
+        {
+          "factor": "Fundamentally flawed reactor design (RBMK)",
+          "explanation": "The RBMK had a 'positive void coefficient' - when coolant boiled into steam, the nuclear reaction sped up instead of slowing down. This positive feedback loop is unstable. No Western reactor was ever built with this characteristic."
+        },
+        {
+          "factor": "Graphite-tipped control rods",
+          "explanation": "When operators pressed the emergency SCRAM button, the graphite tips of the control rods initially DISPLACED water and INCREASED reactivity for the first few seconds before the boron absorbing material entered the core. The 'safety system' triggered the explosion."
+        },
+        {
+          "factor": "Reckless safety test procedure",
+          "explanation": "The test plan required violating multiple safety procedures, including operating below the minimum allowed power level. Operators repeatedly disabled emergency cooling and other safety systems."
+        },
+        {
+          "factor": "Operator culture of compliance over safety",
+          "explanation": "The Soviet nuclear program prioritized procedural compliance over independent safety judgment. Operators were not trained to refuse unsafe orders or recognize design vulnerabilities."
+        },
+        {
+          "factor": "No containment structure",
+          "explanation": "Unlike Western reactors, the RBMK had no proper containment building. When the explosion occurred, radioactive material was vented directly to the atmosphere."
+        },
+        {
+          "factor": "Reactor operating outside safe parameters",
+          "explanation": "The test required power below 700 MW, but during preparation, power dropped to 30 MW (xenon poisoning). Operators withdrew nearly all control rods to bring power up - leaving the reactor in an extremely unstable state."
+        }
+      ],
+      "what_we_learned": [
+        {
+          "lesson": "Reactor designs must have negative void coefficients",
+          "modern_solution": "All Western reactors and modern designs have negative void/temperature coefficients. If coolant overheats or boils, the reaction SLOWS automatically. This is inherent passive safety."
+        },
+        {
+          "lesson": "Containment is mandatory",
+          "modern_solution": "All modern reactors have robust containment buildings designed to withstand even severe accidents. RBMK-style reactors are no longer built; existing ones have been modified extensively."
+        },
+        {
+          "lesson": "Safety culture must be independent",
+          "modern_solution": "International safety standards (IAEA), peer review (WANO), and regulatory independence are now mandatory worldwide. Operators are trained to STOP unsafe operations regardless of management pressure."
+        },
+        {
+          "lesson": "Control rod design must fail safe",
+          "modern_solution": "Modern control rods cannot temporarily increase reactivity. Most reactors use gravity-fed rod insertion that physically cannot fail in the wrong direction."
+        }
+      ],
+      "modern_design_changes": [
+        "Negative temperature/void coefficient (Gen II onwards)",
+        "Robust containment buildings (mandatory worldwide)",
+        "Independent safety culture and regulatory bodies",
+        "Fail-safe control rod systems",
+        "Multiple redundant shutdown systems",
+        "International incident reporting and peer review (WANO, IAEA)",
+        "Severe accident management procedures"
+      ],
+      "sources": [
+        {
+          "title": "INSAG-7: The Chernobyl Accident: Updating of INSAG-1",
+          "publisher": "International Atomic Energy Agency",
+          "year": 1992
+        },
+        {
+          "title": "Chernobyl: Assessment of Radiological and Health Impact",
+          "publisher": "OECD Nuclear Energy Agency",
+          "year": 2002
+        },
+        {
+          "title": "20 Years After the Chernobyl Accident: Future Outlook",
+          "publisher": "International Atomic Energy Agency / WHO"
+        }
+      ]
+    },
+    {
+      "id": "davis-besse",
+      "name": "Davis-Besse",
+      "fullName": "Davis-Besse Nuclear Power Station - Reactor Head Corrosion",
+      "date": "2002-03-01",
+      "year": 2002,
+      "location": {
+        "site": "Davis-Besse Nuclear Power Station",
+        "city": "Oak Harbor",
+        "state": "Ohio",
+        "country": "USA",
+        "coordinates": [41.60, -83.09]
+      },
+      "reactor": {
+        "type": "Pressurized Water Reactor (PWR)",
+        "designPowerMW": 925,
+        "operatingPowerMW": 925,
+        "purpose": "Commercial electricity generation",
+        "moderator": "Light water",
+        "coolant": "Light water",
+        "fuel": "Low-enriched uranium dioxide"
+      },
+      "ines": 3,
+      "casualties": {
+        "immediate_deaths": 0,
+        "injuries": 0,
+        "long_term_deaths": 0,
+        "evacuations": 0,
+        "notes": "Near-miss event - no accident actually occurred"
+      },
+      "release": {
+        "actual_release": "None - issue caught before reactor compromise",
+        "potential_consequence": "Could have led to severe accident if not discovered"
+      },
+      "summary": "During a routine inspection, workers discovered that boric acid had eaten through 6 inches of the carbon steel reactor pressure vessel head, leaving only a 3/8-inch stainless steel liner holding back high-pressure radioactive coolant. The corrosion had been developing undetected for years. This near-miss revealed industry-wide inspection failures and led to major regulatory reforms.",
+      "what_went_wrong": [
+        {
+          "factor": "Years of undetected boric acid corrosion",
+          "explanation": "Small leaks of boric acid (used in coolant) had been seeping out of cracked control rod drive nozzles for years. The boric acid slowly ate through the carbon steel reactor head, creating a football-sized cavity 6 inches deep."
+        },
+        {
+          "factor": "Inadequate inspection regime",
+          "explanation": "Inspections were primarily visual and didn't account for the gradual corrosion process. Boric acid deposits were treated as cosmetic issues rather than warning signs of underlying corrosion."
+        },
+        {
+          "factor": "Production-over-safety culture",
+          "explanation": "FirstEnergy (the operator) had a documented pattern of prioritizing operational uptime over maintenance. Multiple opportunities to discover the problem earlier were missed because shutting down for inspection was discouraged."
+        },
+        {
+          "factor": "Industry-wide complacency about head corrosion",
+          "explanation": "Other US reactors had documented similar corrosion issues, but the industry treated them as isolated problems rather than recognizing the systematic risk."
+        },
+        {
+          "factor": "Stainless steel liner was the only barrier",
+          "explanation": "The 3/8-inch stainless steel inner liner was never designed to be a primary pressure boundary. It was bulging outward under reactor pressure when discovered."
+        }
+      ],
+      "what_we_learned": [
+        {
+          "lesson": "Predictive monitoring beats reactive maintenance",
+          "modern_solution": "All US reactors now require advanced monitoring of head penetrations, including ultrasonic testing, eddy current inspection, and continuous chemistry monitoring."
+        },
+        {
+          "lesson": "Boric acid leaks are NOT cosmetic",
+          "modern_solution": "Any boric acid deposits now trigger mandatory investigation and removal. The 'small leak' concept is gone - every leak must be characterized and addressed."
+        },
+        {
+          "lesson": "Safety culture audits required",
+          "modern_solution": "NRC now conducts regular safety culture assessments. Plants with poor safety culture face escalating regulatory action including potential shutdown."
+        },
+        {
+          "lesson": "Reactor head replacement programs",
+          "modern_solution": "Many US reactors have proactively replaced their reactor heads with corrosion-resistant designs. New reactor designs use Inconel 690 instead of older alloys to resist primary water stress corrosion cracking."
+        }
+      ],
+      "modern_design_changes": [
+        "Continuous online monitoring of head penetrations",
+        "Replacement reactor heads with corrosion-resistant materials",
+        "Mandatory safety culture assessments",
+        "Stricter inspection protocols and frequencies",
+        "AI-assisted predictive maintenance algorithms",
+        "Enhanced operating experience sharing"
+      ],
+      "sources": [
+        {
+          "title": "NRC Lessons Learned Task Force Report on Davis-Besse",
+          "publisher": "U.S. Nuclear Regulatory Commission",
+          "year": 2002
+        },
+        {
+          "title": "Davis-Besse Reactor Pressure Vessel Head Degradation",
+          "publisher": "U.S. NRC"
+        }
+      ]
+    },
+    {
+      "id": "fukushima",
+      "name": "Fukushima Daiichi",
+      "fullName": "Fukushima Daiichi Nuclear Power Plant",
+      "date": "2011-03-11",
+      "year": 2011,
+      "location": {
+        "site": "Fukushima Daiichi Nuclear Power Plant",
+        "city": "Okuma/Futaba",
+        "state": "Fukushima Prefecture",
+        "country": "Japan",
+        "coordinates": [37.42, 141.03]
+      },
+      "reactor": {
+        "type": "Boiling Water Reactor (BWR) - Mark I containment",
+        "designPowerMW": "460-784 (multiple units)",
+        "operatingPowerMW": "1380 MWe total operating",
+        "purpose": "Commercial electricity generation",
+        "moderator": "Light water",
+        "coolant": "Light water",
+        "fuel": "Low-enriched uranium dioxide / MOX",
+        "units_affected": "Units 1, 2, 3 (4 also damaged via hydrogen migration)"
+      },
+      "ines": 7,
+      "casualties": {
+        "immediate_deaths": 0,
+        "deaths_from_radiation": "1 worker death attributed to radiation-induced lung cancer (compensation, 2018)",
+        "deaths_from_evacuation": "~2,200 indirect deaths from evacuation (elderly, ill)",
+        "tsunami_deaths": "15,899 (from earthquake/tsunami itself, not nuclear)",
+        "evacuations": "~154,000 evacuated, ~165,000 still displaced as of 2014"
+      },
+      "release": {
+        "iodine131_petabecquerels": 100,
+        "cesium137_petabecquerels": 6,
+        "comparison_to_chernobyl": "About 10-15% of Chernobyl release",
+        "ocean_release": "Significant ocean contamination - largest single-event marine radioactive release in history"
+      },
+      "summary": "A magnitude 9.0 earthquake automatically shut down all operating reactors. However, the resulting tsunami (~14m high) overtopped the seawall (designed for 5.7m) and flooded backup diesel generators. With no power for cooling, three reactor cores melted down over the following days, releasing radioactive material. The disaster exposed assumptions about 'beyond design basis' events and led to global safety upgrades.",
+      "what_went_wrong": [
+        {
+          "factor": "Seawall designed for wrong tsunami size",
+          "explanation": "The site was designed assuming a maximum tsunami of 5.7 meters. Historical records showed larger tsunamis had occurred in the region centuries earlier (the 869 Jōgan tsunami), but these warnings were dismissed as too speculative for design basis."
+        },
+        {
+          "factor": "Backup generators in vulnerable location",
+          "explanation": "Emergency diesel generators were located in basement areas that were inundated by the tsunami. Even Unit 6's generator that worked was due to it being located higher than others, providing cooling for Units 5 and 6."
+        },
+        {
+          "factor": "Station Blackout (SBO) inadequate planning",
+          "explanation": "The plant was designed to handle 8 hours of station blackout. The actual blackout lasted days. There was no realistic plan for extended loss of all power."
+        },
+        {
+          "factor": "Hydrogen explosions damaged buildings",
+          "explanation": "As fuel overheated, zirconium cladding reacted with steam producing hydrogen. The Mark I containment design vented hydrogen into the reactor building (not externally), where it accumulated and exploded, damaging Units 1, 3, and 4."
+        },
+        {
+          "factor": "Weak regulatory oversight",
+          "explanation": "TEPCO had a documented history of falsifying safety reports. Japanese regulators (NISA) were not independent enough to challenge utility companies. The 'safety myth' culture made acknowledging risks politically difficult."
+        },
+        {
+          "factor": "Inadequate emergency response coordination",
+          "explanation": "Communication between TEPCO, government, and emergency responders was poor. Crucial decisions were delayed, and seawater injection (which would damage the reactors permanently) was hesitated on for hours."
+        }
+      ],
+      "what_we_learned": [
+        {
+          "lesson": "Design basis must include extreme natural events",
+          "modern_solution": "Post-Fukushima, all nuclear plants worldwide reassessed external hazards. Many plants raised seawalls, relocated backup power, and added new emergency capabilities. New plants must demonstrate safety margin against beyond-design-basis events."
+        },
+        {
+          "lesson": "Passive safety systems save lives",
+          "modern_solution": "Generation III+ reactors (AP1000, ESBWR, etc.) use passive safety systems that don't require electrical power. Cooling continues for days using gravity, natural circulation, and pre-positioned water, even with total station blackout."
+        },
+        {
+          "lesson": "Hydrogen control is critical",
+          "modern_solution": "All US reactors now have passive autocatalytic hydrogen recombiners that prevent hydrogen accumulation. Filtered containment vents allow controlled release without explosions."
+        },
+        {
+          "lesson": "Independent regulators are essential",
+          "modern_solution": "Japan completely reorganized its nuclear regulator after Fukushima. The Nuclear Regulation Authority (NRA) is independent and has shutdown authority."
+        },
+        {
+          "lesson": "FLEX equipment for severe accidents",
+          "modern_solution": "All US plants now have 'FLEX' portable equipment (pumps, generators, cables) stored at multiple locations on each site, plus regional response centers, ready to provide emergency cooling for indefinite duration."
+        }
+      ],
+      "modern_design_changes": [
+        "Passive cooling systems that work without electricity",
+        "Filtered containment vents",
+        "Hydrogen recombiners",
+        "FLEX portable emergency equipment",
+        "Reassessment of external hazards (tsunamis, earthquakes, floods)",
+        "Higher seawalls and flood protection",
+        "Backup generators on elevated positions",
+        "Multiple independent ways to add water to reactors and spent fuel",
+        "Severe accident management guidelines (SAMG)"
+      ],
+      "sources": [
+        {
+          "title": "The Official Report of the Fukushima Nuclear Accident Independent Investigation Commission",
+          "publisher": "National Diet of Japan",
+          "year": 2012
+        },
+        {
+          "title": "The Fukushima Daiichi Accident",
+          "publisher": "International Atomic Energy Agency",
+          "year": 2015
+        },
+        {
+          "title": "UNSCEAR 2013 Report: Sources, Effects and Risks of Ionizing Radiation",
+          "publisher": "United Nations Scientific Committee"
+        }
+      ]
+    }
+  ],
+  "metadata": {
+    "version": "1.0",
+    "last_updated": "2026-05-09",
+    "narrative_arc": "Each incident reveals a different category of failure that nuclear engineering has subsequently engineered out. The arc shows the evolution from naive early designs to today's defense-in-depth approach.",
+    "data_quality_note": "All data sourced from primary documents (IAEA, NRC, government reports). Casualty figures use most rigorous peer-reviewed estimates."
+  }
+}
