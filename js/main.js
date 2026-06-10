@@ -90,32 +90,17 @@ function openIncident(id) {
 
     <section class="m-section">
       <h3 class="m-section-title">What went wrong</h3>
-      <ul class="m-failure-list">
+      <ul class="m-failure-list m-failure-list-compact">
         ${incident.failures.map(f => `
-          <li>
-            <span class="m-factor">${f.factor}</span>
-            <span class="m-explanation">${f.explanation}</span>
-          </li>
+          <li><span class="m-factor">${f.factor}</span></li>
         `).join('')}
       </ul>
     </section>
 
     <section class="m-section">
-      <h3 class="m-section-title">What we learned</h3>
-      <ul class="m-lesson-list">
-        ${incident.lessons.map(l => `
-          <li>
-            <span class="m-lesson">${l.lesson}</span>
-            <span class="m-solution">${l.solution}</span>
-          </li>
-        `).join('')}
-      </ul>
-    </section>
-
-    <section class="m-section">
-      <h3 class="m-section-title">Modern reactors no longer have this risk</h3>
+      <h3 class="m-section-title">How modern reactors fixed it</h3>
       <ul class="m-changes-list">
-        ${incident.modernChanges.map(c => `<li>${c}</li>`).join('')}
+        ${incident.modernChanges.slice(0, 3).map(c => `<li>${c}</li>`).join('')}
       </ul>
     </section>
   `;
@@ -186,9 +171,24 @@ function initScrollReveal() {
   elements.forEach(el => observer.observe(el));
 }
 
+function initRiskChart() {
+  const chartWrap = document.querySelector('.risk-chart-wrap');
+  if (!chartWrap) return;
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        chartWrap.classList.add('is-visible');
+        observer.unobserve(entry.target);
+      }
+    });
+  }, { threshold: 0.3 });
+  observer.observe(chartWrap);
+}
+
 document.addEventListener('DOMContentLoaded', () => {
   buildTimeline();
   animateDeathBars();
   insertDiagrams();
   initScrollReveal();
+  initRiskChart();
 });

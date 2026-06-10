@@ -12,7 +12,7 @@ const INCIDENTS = [
     reactorType: "Experimental BWR",
     ines: 4,
     deaths: 3,
-    summary: "First fatal nuclear reactor accident in US history. During a routine maintenance procedure, a single operator manually withdrew the central control rod too far, causing prompt criticality. The reactor went from shutdown to roughly 20 gigawatts of power in 4 milliseconds, producing a steam explosion that killed all three operators present.",
+    summary: "A single operator pulled the central control rod way too far during routine maintenance. The reactor jumped from shutdown to about 20 gigawatts in 4 milliseconds — a steam explosion killed all three operators present.",
     teaserSummary: "A single operator withdrew a control rod too far during maintenance. The reactor went from shutdown to 20 gigawatts in 4 milliseconds.",
     failures: [
       {
@@ -70,7 +70,7 @@ const INCIDENTS = [
     reactorType: "Pressurized Water Reactor (906 MW)",
     ines: 5,
     deaths: 0,
-    summary: "Equipment failures and operator errors led to a partial meltdown of the reactor core. A stuck-open relief valve allowed coolant to escape, but operators misread their instruments and shut off emergency cooling. About half the reactor core melted, but containment held and minimal radiation was released. The accident transformed nuclear regulation in the US.",
+    summary: "A stuck valve let coolant escape, and confused operators shut off the emergency cooling — exactly the wrong move. About half the reactor core melted, but the containment building held and almost no radiation was released.",
     teaserSummary: "A stuck valve plus confused operators caused a partial meltdown — but containment held. The accident transformed how nuclear is regulated.",
     failures: [
       {
@@ -129,7 +129,7 @@ const INCIDENTS = [
     reactorType: "RBMK-1000 (3,200 MW)",
     ines: 7,
     deaths: 31,
-    summary: "During a poorly-planned safety test, operators violated procedures and disabled safety systems on a flawed reactor design. The combination of bad design and operator errors caused a steam explosion and graphite fire. The lack of containment allowed massive radiation release that contaminated large parts of Europe. Considered the worst nuclear disaster in history.",
+    summary: "Operators ran a poorly planned safety test on a flawed Soviet reactor design while disabling safety systems. The reactor exploded, and because there was no containment building, radiation spread across Europe — still the worst nuclear disaster in history.",
     teaserSummary: "A flawed Soviet reactor design plus a reckless safety test plus disabled safety systems. No containment building. Worst nuclear disaster in history.",
     failures: [
       {
@@ -196,7 +196,7 @@ const INCIDENTS = [
     reactorType: "Pressurized Water Reactor (925 MW)",
     ines: 3,
     deaths: 0,
-    summary: "During a routine inspection, workers discovered that boric acid had eaten through 6 inches of the carbon steel reactor pressure vessel head, leaving only a 3/8-inch stainless steel liner holding back high-pressure radioactive coolant. The corrosion had been developing undetected for years. This near-miss revealed industry-wide inspection failures and led to major regulatory reforms.",
+    summary: "Boric acid had quietly eaten through 6 inches of the reactor's steel head over years, leaving only a 3/8-inch liner holding back high-pressure radioactive coolant. Workers caught it during a routine inspection before anything happened — but it was a serious wake-up call for the industry.",
     teaserSummary: "Boric acid had eaten a football-sized hole through 6 inches of reactor steel — leaving only a 3/8-inch liner between the operator and disaster. Discovered in time.",
     failures: [
       {
@@ -254,7 +254,7 @@ const INCIDENTS = [
     reactorType: "BWR Mark I (multiple units)",
     ines: 7,
     deaths: 1,
-    summary: "A magnitude 9.0 earthquake automatically shut down all operating reactors. However, the resulting tsunami (around 14 meters high) overtopped the seawall (designed for 5.7m) and flooded backup diesel generators. With no power for cooling, three reactor cores melted down over the following days. The disaster exposed assumptions about 'beyond design basis' events and led to global safety upgrades.",
+    summary: "A magnitude 9.0 earthquake automatically shut down all reactors, but the tsunami that followed overtopped the 5.7m seawall and flooded the backup diesel generators. Without cooling power, three reactor cores melted down over the next several days.",
     teaserSummary: "Earthquake and tsunami flooded backup generators. Three cores melted over several days. No radiation deaths from the accident itself — but the disaster reshaped global nuclear safety.",
     failures: [
       {
