@@ -65,7 +65,6 @@ function openIncident(id) {
 
     ${diagram ? `
       <section class="m-section m-diagram-section">
-        <h3 class="m-section-title">How it failed</h3>
         <div class="m-diagram">${diagram}</div>
       </section>
     ` : ''}

@@ -12,8 +12,8 @@ const INCIDENTS = [
     reactorType: "Experimental BWR",
     ines: 4,
     deaths: 3,
-    summary: "A single operator pulled the central control rod way too far during routine maintenance. The reactor jumped from shutdown to about 20 gigawatts in 4 milliseconds — a steam explosion killed all three operators present.",
-    teaserSummary: "A single operator withdrew a control rod too far during maintenance. The reactor went from shutdown to 20 gigawatts in 4 milliseconds.",
+    summary: "An operator pulled a control rod way too far during routine maintenance, causing the reactor to jump to 20 gigawatts in just 4 milliseconds which caused a steam explosion that killed all three of the people present.",
+    teaserSummary: "An operator pulled a control rod way too far during routine maintenance, causing the reactor to jump to 20 gigawatts in just 4 milliseconds.",
     failures: [
       {
         factor: "Single-rod criticality possible",
@@ -70,8 +70,8 @@ const INCIDENTS = [
     reactorType: "Pressurized Water Reactor (906 MW)",
     ines: 5,
     deaths: 0,
-    summary: "A stuck valve let coolant escape, and confused operators shut off the emergency cooling — exactly the wrong move. About half the reactor core melted, but the containment building held and almost no radiation was released.",
-    teaserSummary: "A stuck valve plus confused operators caused a partial meltdown — but containment held. The accident transformed how nuclear is regulated.",
+    summary: "A mechanical failure caused coolant to escape, and then for some reason the operators present got incorrect readings and shut off emergency cooling, which was a terrible idea. Half of the reactor core melted but luckily the containment building held up and almost no radiation was released.",
+    teaserSummary: "Mechanical failure caused coolant to escape and operators shut off emergency cooling, which was a terrible idea. Containment held.",
     failures: [
       {
         factor: "Stuck-open pilot-operated relief valve",
@@ -129,8 +129,8 @@ const INCIDENTS = [
     reactorType: "RBMK-1000 (3,200 MW)",
     ines: 7,
     deaths: 31,
-    summary: "Operators ran a poorly planned safety test on a flawed Soviet reactor design while disabling safety systems. The reactor exploded, and because there was no containment building, radiation spread across Europe — still the worst nuclear disaster in history.",
-    teaserSummary: "A flawed Soviet reactor design plus a reckless safety test plus disabled safety systems. No containment building. Worst nuclear disaster in history.",
+    summary: "The Soviet operators working at Chernobyl on a flawed reactor design ran a poorly planned safety test and disregarded safety systems, causing the reactor to explode. There was no containment building so radiation spread across Europe.",
+    teaserSummary: "Operators ran a poorly planned safety test on a flawed reactor design. No containment building, radiation spread across Europe.",
     failures: [
       {
         factor: "Fundamentally flawed reactor design (RBMK)",
@@ -196,8 +196,8 @@ const INCIDENTS = [
     reactorType: "Pressurized Water Reactor (925 MW)",
     ines: 3,
     deaths: 0,
-    summary: "Boric acid had quietly eaten through 6 inches of the reactor's steel head over years, leaving only a 3/8-inch liner holding back high-pressure radioactive coolant. Workers caught it during a routine inspection before anything happened — but it was a serious wake-up call for the industry.",
-    teaserSummary: "Boric acid had eaten a football-sized hole through 6 inches of reactor steel — leaving only a 3/8-inch liner between the operator and disaster. Discovered in time.",
+    summary: "Leaked boric acid dissolved 6 inches of what's called the reactor's steel head over a few years, which left a fraction of an inch of steel holding back a high pressure environment. The workers caught and fixed this before anything bad happened, however this incident caused the development of even safer reactors and even more rigorous safety checks.",
+    teaserSummary: "Boric acid dissolved 6 inches of the reactor's steel head over years, leaving just a fraction of an inch of steel. Caught in time.",
     failures: [
       {
         factor: "Years of undetected boric acid corrosion",
@@ -254,8 +254,8 @@ const INCIDENTS = [
     reactorType: "BWR Mark I (multiple units)",
     ines: 7,
     deaths: 1,
-    summary: "A magnitude 9.0 earthquake automatically shut down all reactors, but the tsunami that followed overtopped the 5.7m seawall and flooded the backup diesel generators. Without cooling power, three reactor cores melted down over the next several days.",
-    teaserSummary: "Earthquake and tsunami flooded backup generators. Three cores melted over several days. No radiation deaths from the accident itself — but the disaster reshaped global nuclear safety.",
+    summary: "Reactors need cooling long after being shut down due to what's called radiation decay, and in 2011 a magnitude 9 earthquake struck Japan's coast which of course shut down reactors, but the following tsunami went over the roughly 19 foot seawall flooding the generators which were cooling the reactors, causing a meltdown. All 3 reactor cores melted.",
+    teaserSummary: "Earthquake shut down reactors but the following tsunami flooded the backup generators. All 3 reactor cores melted.",
     failures: [
       {
         factor: "Seawall designed for wrong tsunami size",
