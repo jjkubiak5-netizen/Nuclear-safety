@@ -378,13 +378,6 @@ const DEFENSE_DEPTH_SVG = `
       </radialGradient>
     </defs>
 
-    <text x="300" y="30" font-family="Fraunces, serif" font-size="18" font-weight="500" fill="#1a1612" text-anchor="middle">
-      Defense in Depth
-    </text>
-    <text x="300" y="50" font-family="Fraunces, serif" font-size="13" font-style="italic" fill="#4a423a" text-anchor="middle">
-      Five barriers that all must fail for radiation to escape
-    </text>
-
     <!-- Layer 5: Exclusion zone -->
     <circle cx="300" cy="280" r="200" fill="none" stroke="#999186" stroke-width="2" stroke-dasharray="5,3"/>
     <text x="300" y="100" font-family="JetBrains Mono, monospace" font-size="10" fill="#8a7f72" text-anchor="middle">5 · EXCLUSION ZONE</text>
@@ -413,28 +406,19 @@ const DEFENSE_DEPTH_SVG = `
     <g font-family="JetBrains Mono, monospace" font-size="9" fill="#4a423a">
       <line x1="320" y1="305" x2="510" y2="100" stroke="#999186" stroke-width="1"/>
       <text x="510" y="100" font-weight="700">Ceramic UO₂</text>
-      <text x="510" y="113">Holds 99% of fission products</text>
 
       <line x1="345" y1="300" x2="510" y2="155" stroke="#999186" stroke-width="1"/>
       <text x="510" y="155" font-weight="700">Zircaloy cladding</text>
-      <text x="510" y="168">Hermetic seal around fuel</text>
 
       <line x1="380" y1="295" x2="510" y2="210" stroke="#999186" stroke-width="1"/>
       <text x="510" y="210" font-weight="700">Steel pressure vessel</text>
-      <text x="510" y="223">8" of forged steel</text>
 
       <line x1="420" y1="290" x2="510" y2="265" stroke="#999186" stroke-width="1"/>
       <text x="510" y="265" font-weight="700">Steel containment</text>
-      <text x="510" y="278">+ pressure suppression</text>
 
       <line x1="460" y1="280" x2="510" y2="320" stroke="#999186" stroke-width="1"/>
       <text x="510" y="320" font-weight="700">Reinforced concrete</text>
-      <text x="510" y="333">Survives airliner impact</text>
     </g>
-
-    <text x="300" y="465" font-family="Fraunces, serif" font-size="13" font-style="italic" fill="#4a423a" text-anchor="middle">
-      A radiation release requires all five barriers to fail simultaneously.
-    </text>
   </svg>
 `;
 
