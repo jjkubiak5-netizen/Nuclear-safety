@@ -36,11 +36,9 @@
     <nav class="header-nav">
       <a href="#prologue">Prologue</a>
       <a href="#timeline">Timeline</a>
-      <a href="#decay">Physics</a>
       <a href="#reactors">Reactors</a>
       <a href="#defense">Defense</a>
       <a href="#comparison">Data</a>
-      <a href="#epilogue">Epilogue</a>
     </nav>
   </div>
 </header>
@@ -72,11 +70,6 @@
   </div>
 
   <div class="hero-inner">
-    <div class="hero-meta reveal">
-      <span class="meta-line"></span>
-      <span class="meta-label">A DATA-DRIVEN INVESTIGATION · 2026</span>
-      <span class="meta-line"></span>
-    </div>
     <h1 class="hero-title reveal">
       <span class="title-from">From</span>
       <span class="title-sl1">SL-1</span>
@@ -84,8 +77,8 @@
       <span class="title-smrs">SMRs</span>
     </h1>
     <p class="hero-subtitle reveal">
-      How nuclear engineering fixed each disaster
-      that shaped public opinion
+      How engineers improved reactor designs
+      as a result of these events
     </p>
     <div class="hero-stats reveal">
       <div class="stat">
@@ -110,7 +103,6 @@
   <div class="container">
     <div class="section-marker reveal">
       <span class="marker-num">00</span>
-      <span class="marker-label">Prologue</span>
     </div>
     <h2 class="section-title reveal">Fear versus facts</h2>
     <div class="prose-grid">
@@ -132,7 +124,6 @@
   <div class="container">
     <div class="section-marker reveal">
       <span class="marker-num">01</span>
-      <span class="marker-label">Timeline of disasters</span>
     </div>
     <h2 class="section-title reveal">Five incidents, five lessons</h2>
     <p class="section-deck reveal">Each incident below showed a different kind of failure. Click any year to see the full story with diagrams.</p>
@@ -152,46 +143,11 @@
 </div>
 
 <!-- DECAY HEAT (PHYSICS) -->
-<section id="decay" class="decay-section">
-  <div class="container">
-    <div class="section-marker reveal">
-      <span class="marker-num">02</span>
-      <span class="marker-label">The physics that drives safety</span>
-    </div>
-    <h2 class="section-title reveal">Why a "stopped" reactor still needs cooling</h2>
-    <p class="section-deck reveal">When operators hit the emergency shutdown (SCRAM), the chain reaction stops within seconds. But the fuel keeps making heat for days because of radioactive decay. This leftover heat is what made Fukushima dangerous — and what modern safety systems are built to handle.</p>
-
-    <div class="diagram-container reveal" id="decay-heat-diagram">
-      <!-- Populated by JS -->
-    </div>
-
-    <div class="physics-explainer reveal">
-      <div class="physics-grid">
-        <div class="physics-card">
-          <span class="physics-label">The Math</span>
-          <p>Decay heat follows a power law: <span class="math-mono">P(t) ≈ 0.066 × P₀ × t<sup>-0.2</sup></span></p>
-          <p>Even years after shutdown, fuel rods still produce heat from long-lived radioactive isotopes (Todreas &amp; Kazimi, 2012).</p>
-        </div>
-        <div class="physics-card">
-          <span class="physics-label">Why It Matters</span>
-          <p>A 3,000 MW reactor still makes 50 MW of heat one hour after shutdown.</p>
-          <p>Without cooling, that's enough to melt the fuel in just 2 to 3 hours.</p>
-        </div>
-        <div class="physics-card">
-          <span class="physics-label">The Fix</span>
-          <p>Generation III+ reactors use gravity-fed cooling that works without any electricity for at least 72 hours (Westinghouse AP1000 specs, NRC certified).</p>
-        </div>
-      </div>
-    </div>
-  </div>
-</section>
-
 <!-- REACTOR TYPE COMPARISON -->
 <section id="reactors" class="reactors-section">
   <div class="container">
     <div class="section-marker reveal">
-      <span class="marker-num">03</span>
-      <span class="marker-label">Design determines danger</span>
+      <span class="marker-num">02</span>
     </div>
     <h2 class="section-title reveal">Four reactor types, four levels of safety</h2>
     <p class="section-deck reveal">There have been many different reactor designs over the years, some extremely safe and some pretty dangerous. Compare these four to see why modern SMRs can't melt down no matter what an operator does.</p>
@@ -206,8 +162,7 @@
 <section id="defense" class="defense-section">
   <div class="container">
     <div class="section-marker reveal">
-      <span class="marker-num">04</span>
-      <span class="marker-label">How modern reactors are protected</span>
+      <span class="marker-num">03</span>
     </div>
     <h2 class="section-title reveal">The five barriers between you and the fuel</h2>
     <p class="section-deck reveal">Modern reactors use something called "defense in depth" — multiple independent barriers, each designed to keep radiation inside if all the others fail. For radiation to reach the public, every single layer has to break.</p>
@@ -222,11 +177,9 @@
 <section id="comparison" class="comparison-section">
   <div class="container">
     <div class="section-marker reveal">
-      <span class="marker-num">05</span>
-      <span class="marker-label">The data nobody mentions</span>
+      <span class="marker-num">04</span>
     </div>
     <h2 class="section-title reveal">Deaths per terawatt-hour</h2>
-    <p class="section-deck reveal">Energy comparison from peer-reviewed studies. Lower is safer. The chart shows actual deaths caused by each energy source per unit of electricity produced.</p>
 
     <div class="death-chart reveal">
       <div class="death-row" data-source="coal-brown">
@@ -306,11 +259,6 @@
     <div class="chart-caption reveal">
       <p>Source: <em>Our World in Data</em>, based on Markandya & Wilkinson (2007) and Sovacool et al. (2016). Includes both accidents and air pollution deaths. Coal data assumes typical European emission standards.</p>
     </div>
-
-    <div class="comparison-takeaway reveal">
-      <h3>Nuclear is one of the safest energy sources we have</h3>
-      <p>Even with its scary reputation, nuclear power has caused <strong>fewer deaths per unit of energy</strong> than every fossil fuel, and it's almost as safe as wind and solar (Our World in Data, 2024). The major incidents you read about above account for most of nuclear's historical deaths — combined.</p>
-    </div>
   </div>
 </section>
 
@@ -318,39 +266,19 @@
 <section id="generations" class="generations-section">
   <div class="container">
     <div class="section-marker reveal">
-      <span class="marker-num">06</span>
-      <span class="marker-label">The evolution of safety</span>
+      <span class="marker-num">05</span>
     </div>
     <h2 class="section-title reveal">Safer with every generation</h2>
-    <p class="section-deck reveal">Reactor designs have improved through four generations, each one fixing the problems of the one before it. Today's emerging Gen IV designs can't melt down even if no one is operating them (World Nuclear Association, 2024).</p>
+    <p class="section-deck reveal">Reactor safety has come a long way over the years, from reactors that were complete ticking time bombs to reactors we don't even need operators on site for.</p>
 
     <div class="diagram-container wide reveal" id="generations-diagram">
       <!-- Populated by JS -->
     </div>
 
-    <div class="gen-detail-grid reveal">
-      <div class="gen-detail">
-        <span class="gen-label">Gen I — Active safety</span>
-        <p>Operators kept the reactor safe by hand. Containment was minimal.</p>
-      </div>
-      <div class="gen-detail">
-        <span class="gen-label">Gen II — Engineered safety</span>
-        <p>Backup systems took over during emergencies. TMI, Chernobyl, and Fukushima were all Gen II.</p>
-      </div>
-      <div class="gen-detail">
-        <span class="gen-label">Gen III — Passive safety</span>
-        <p>Safety systems work without electricity, using gravity and natural water flow.</p>
-      </div>
-      <div class="gen-detail">
-        <span class="gen-label">Gen IV — Inherently safe</span>
-        <p>Physics itself stops a meltdown. Cooling isn't even required.</p>
-      </div>
-    </div>
-
     <!-- ANIMATED RISK CHART -->
     <div class="risk-chart-wrap reveal">
-      <h3 class="risk-chart-title">Risk over reactor lifetime</h3>
-      <p class="risk-chart-deck">Modeled risk index across reactor age, by generation. Modern designs stay in the low-risk zone for their entire operational life.</p>
+      <h3 class="risk-chart-title">Reactor risk over time</h3>
+      <p class="risk-chart-deck">This graph models the risk of reactor failures over time using a simple equation that accurately represents the risk as reactors age based on time and model.</p>
       <div class="risk-chart">
         <svg viewBox="0 0 780 440" xmlns="http://www.w3.org/2000/svg" class="risk-chart-svg" aria-label="Risk over reactor lifetime by generation">
 
@@ -415,21 +343,6 @@
       <p class="risk-chart-caption">Risk model: <span class="math-mono">R(t) = base × [1 + b · ln(1 + t)]</span> · Gen II base = 0.18 · Gen III = 0.08 · Gen IV = 0.03</p>
     </div>
 
-  </div>
-</section>
-
-<!-- CONCLUSION -->
-<section id="epilogue" class="epilogue">
-  <div class="container">
-    <div class="conclusion-final reveal">
-      <p>Nuclear power isn't perfect, but it's one of the safest energy sources we have — and it's getting safer with every generation. The reactors being built today learned from every failure on this page.</p>
-    </div>
-
-    <div class="signoff reveal">
-      <span class="signoff-line"></span>
-      <span class="signoff-text">END · A nuclear safety archive · 2026</span>
-      <span class="signoff-line"></span>
-    </div>
   </div>
 </section>
 
