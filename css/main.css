@@ -223,16 +223,29 @@ body {
 }
 
 .electron-1 {
-  animation: orbit1 8s linear infinite;
+  animation: spinup1 3s cubic-bezier(0.05, 0.7, 0.4, 1) 1, orbit1 8s linear 3s infinite;
   filter: drop-shadow(0 0 6px rgba(212, 57, 29, 0.6));
 }
 .electron-2 {
-  animation: orbit2 11s linear infinite;
+  animation: spinup2 3s cubic-bezier(0.05, 0.7, 0.4, 1) 1, orbit2 11s linear 3s infinite;
   filter: drop-shadow(0 0 6px rgba(184, 144, 42, 0.6));
 }
 .electron-3 {
-  animation: orbit3 14s linear infinite;
+  animation: spinup3 3s cubic-bezier(0.05, 0.7, 0.4, 1) 1, orbit3 14s linear 3s infinite;
   filter: drop-shadow(0 0 6px rgba(42, 107, 110, 0.6));
+}
+
+@keyframes spinup1 {
+  from { transform: translate(400px, 400px) rotate(0deg) translateX(280px) rotate(0deg); }
+  to { transform: translate(400px, 400px) rotate(720deg) translateX(280px) rotate(-720deg); }
+}
+@keyframes spinup2 {
+  from { transform: translate(400px, 400px) rotate(0deg) translateX(280px) rotate(0deg); }
+  to { transform: translate(400px, 400px) rotate(-720deg) translateX(280px) rotate(720deg); }
+}
+@keyframes spinup3 {
+  from { transform: translate(400px, 400px) rotate(0deg) translateX(280px) rotate(0deg); }
+  to { transform: translate(400px, 400px) rotate(720deg) translateX(280px) rotate(-720deg); }
 }
 
 @keyframes orbit1 {
