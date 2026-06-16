@@ -18,14 +18,6 @@ function buildTimeline() {
           <span class="tc-meta-num">${incident.deaths}</span>
           <span>Direct deaths</span>
         </div>
-        <div class="tc-meta-item">
-          <span class="tc-meta-num">${incident.failures.length}</span>
-          <span>Failures</span>
-        </div>
-        <div class="tc-meta-item">
-          <span class="tc-meta-num">${incident.modernChanges.length}</span>
-          <span>Fixes</span>
-        </div>
       </div>
       <span class="tc-arrow">→ Read case study</span>
     </article>
@@ -68,40 +60,6 @@ function openIncident(id) {
         <div class="m-diagram">${diagram}</div>
       </section>
     ` : ''}
-
-    <section class="m-section">
-      <h3 class="m-section-title">By the numbers</h3>
-      <div class="m-stats-grid">
-        <div class="m-stat">
-          <span class="m-stat-num">${incident.stats.ines}</span>
-          <span class="m-stat-label">INES Scale</span>
-        </div>
-        <div class="m-stat">
-          <span class="m-stat-num">${incident.stats.deaths}</span>
-          <span class="m-stat-label">Direct Deaths</span>
-        </div>
-        <div class="m-stat">
-          <span class="m-stat-num">${incident.stats.release}</span>
-          <span class="m-stat-label">Release</span>
-        </div>
-      </div>
-    </section>
-
-    <section class="m-section">
-      <h3 class="m-section-title">What went wrong</h3>
-      <ul class="m-failure-list m-failure-list-compact">
-        ${incident.failures.map(f => `
-          <li><span class="m-factor">${f.factor}</span></li>
-        `).join('')}
-      </ul>
-    </section>
-
-    <section class="m-section">
-      <h3 class="m-section-title">How modern reactors fixed it</h3>
-      <ul class="m-changes-list">
-        ${incident.modernChanges.slice(0, 3).map(c => `<li>${c}</li>`).join('')}
-      </ul>
-    </section>
   `;
 
   modal.classList.add('open');
